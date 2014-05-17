@@ -25,6 +25,9 @@ class SampleModelsController < ApplicationController
   # POST /sample_models.json
   def create
     @sample_model = SampleModel.new(sample_model_params)
+    @sample_model.schedule = nil
+    # @sample_model.schedule = YAML.load("--- \n...\n") # also fails for YAML nil
+    # @sample_model.schedule = "--- \n...\n" # also fails for string representation of YAML nil
 
     respond_to do |format|
       if @sample_model.save
