@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'ice_cube', '~> 0.12.0'
 
+gem 'minitest-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
