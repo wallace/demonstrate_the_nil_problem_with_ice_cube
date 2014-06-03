@@ -23,3 +23,5 @@ ActionView::Template::Error: can't dup NilClass
 
 1 runs, 0 assertions, 0 failures, 1 errors, 0 skips
 ```
+
+cray branch
